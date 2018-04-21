@@ -1,0 +1,308 @@
+<mvc:View controllerName="MiriRegev.controller.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" displayBlock="true" xmlns:m="sap.m"
+	busyIndicatorDelay="0">
+	<m:App>
+		<m:pages>
+			<m:Page showHeader="false">
+				<m:content>
+					<ObjectPageLayout enableLazyLoading="false"
+						showTitleInHeaderContent="true" showEditHeaderButton="false">
+						<headerTitle>
+							<ObjectPageHeader objectImageURI="./img/Miri.jpg"
+								objectTitle="Miri Regev" objectImageShape="Circle"
+								objectImageAlt="Miri Regev" objectSubtitle="Minister of Culture and Sport"
+								isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="false"
+								isObjectSubtitleAlwaysVisible="false"></ObjectPageHeader>
+						</headerTitle>
+						<headerContent>
+							<layout:VerticalLayout>
+								<m:Link text="+972 5 5555 5555" />
+								<m:Link text="miri@knesset.gov.il" />
+							</layout:VerticalLayout>
+							<layout:HorizontalLayout>
+								<m:Image id="img_fb" src="./img/facebook.png" height="25px"
+									width="25px" press="onPressImage"></m:Image>
+								<m:Image id="img_ig" src="./img/instagram.png" height="25px"
+									width="25px" press="onPressImage"></m:Image>
+								<m:Image id="img_twitter" src="./img/twitter.png"
+									height="25px" width="25px" press="onPressImage"></m:Image>
+							</layout:HorizontalLayout>
+							<layout:VerticalLayout>
+								<m:Label text="Tat-Aluf (mil')" />
+								<m:Label text="IDF Spokesperson!!!" />
+								<m:VBox height="63px">
+									<m:Label text="Achieved law legislations:" />
+									<m:ProgressIndicator percentValue="70"
+										displayValue="70%" showValue="true" state="Success" />
+								</m:VBox>
+							</layout:VerticalLayout>
+							<layout:VerticalLayout>
+								<m:Label text="Rosh HaAyin, Israel" />
+								<m:Label />
+								<m:Label text="SAPUI5 Application by Eden Levy" design="Bold" />
+							</layout:VerticalLayout>
+
+						</headerContent>
+						<sections>
+							<ObjectPageSection id="goalsSection" title="About Me">
+								<subSections>
+									<ObjectPageSubSection id="goalsSectionSS1"
+										title="About Me">
+										<blocks>
+											<m:VBox>
+												<m:Text
+													text="I'm basically the best politician in the history of Israel, let alone the world. My hobbies are cooking delicious moroccan food (as you can see in one of my pictures below), bashing smolanim in the Knesset, and most importantly spending time with my family. I also think Eden Levy from the SISE department in BGU is pretty good in web development. I'll let Wikipedia describe myself:\n\n" />
+												<m:Text class="sapMLabel aboutText"
+													text="Miriam &quot;Miri&quot; Regev (Hebrew: מרים &quot;מירי&quot; רגב‬; born Miriam Siboni on May 26, 1965) is an Israeli politician and a former Brigadier-general in the Israel Defense Forces, in which she served as IDF Spokeswoman. She is currently a member of the Knesset for Likud and Minister of Culture and Sport. On June 14, 2017, she was appointed acting PM to serve while PM Netanyahu would be abroad." />
+												<m:Text
+													text="\n\nCya later shakshukas!!!!!!!! Kapaim!!!!!!!!!!!!!!!!!!" />
+											</m:VBox>
+											<m:VBox alignItems="Center">
+												<m:Label text="Miri &amp; Eden @ Rehovot Mall!!!!!!!"
+													class="italic paddingTop10" />
+												
+												<m:Image src="./img/mypic.jpg" class="customImage" press="onOpenIG">
+													<m:layoutData>
+														<m:FlexItemData alignSelf="Center" />
+													</m:layoutData>
+												</m:Image>
+												
+												<m:Label text="(Click to Enlarge)" class=" font14" />
+											</m:VBox>
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+							<ObjectPageSection id="goalsSection2" title="My Photos">
+								<subSections>
+									<ObjectPageSubSection id="goalsSectionSS2"
+										title="">
+										<blocks>
+											<VBox xmlns="sap.m" fitContainer="false" width="100%">
+												<HBox fitContainer="true" width="100%">
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+														<GenericTile backgroundImage="./img/tile/pic1.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Cannes Film Festival" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic2.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Israel is 70 years old!" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic6.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Israel is 70 years old!" />
+														</GenericTile>
+													</SlideTile>
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+														xmlns="sap.m">
+														<GenericTile backgroundImage="./img/tile/pic3.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Major speaker" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic4.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Moroccan food is the best :)" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic5.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="YNET interview" />
+														</GenericTile>
+													</SlideTile>
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+														xmlns="sap.m">
+														<GenericTile backgroundImage="./img/tile/pic8.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Need to stay fit!" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic7.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="ישתבח שמו לעד" />
+														</GenericTile>
+													</SlideTile>
+												</HBox>
+												<HBox fitContainer="true" width="100%">
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+														<GenericTile backgroundImage="./img/tile/pic10.jpg"
+															frameType="TwoByOne"></GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic11.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="שבוע הכפילים" />
+														</GenericTile>
+													</SlideTile>
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+														xmlns="sap.m">
+														<GenericTile backgroundImage="./img/tile/pic12.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Yarden Gerbi THE BEST!!!!!" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic13.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="Israel is 70 years old!" />
+														</GenericTile>
+													</SlideTile>
+													<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+														xmlns="sap.m">
+														<GenericTile backgroundImage="./img/tile/pic14.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="הכי כיף מימונה מרוקאית!!" />
+														</GenericTile>
+														<GenericTile backgroundImage="./img/tile/pic15.jpg"
+															frameType="TwoByOne">
+															<TileContent footer="מדגמנת בין ישיבות" />
+														</GenericTile>
+													</SlideTile>
+												</HBox>
+											</VBox>
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+							<ObjectPageSection id="playlist" title="My YouTube Playlist">
+								<subSections>
+									<ObjectPageSubSection id="playlistSS1"
+										title="My YouTube Playlist">
+										<blocks>
+											<core:HTML
+												content="&lt;iframe class=&quot;youtube&quot; src=&quot;https://www.youtube.com/embed/videoseries?list=PL-4qCfKuiMMLFIaG1JYGMNhDWJCuYJUL6&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;"></core:HTML>
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+							<ObjectPageSection>
+								<subSections>
+									<ObjectPageSubSection id="fbLike" title="Like My Page!">
+										<blocks>
+											<core:HTML
+												content="&lt;div class=&quot;fb-like&quot; data-href=&quot;https://16ujfv4uyvryulmeaa03aw-on.drv.tw/MiriApp/&quot; data-width=&quot;500&quot; data-layout=&quot;standard&quot; data-action=&quot;like&quot; data-size=&quot;large&quot; data-show-faces=&quot;true&quot; data-share=&quot;true&quot;&gt;&lt;/div&gt;" />
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+
+							<ObjectPageSection>
+								<subSections>
+									<ObjectPageSubSection id="qrcode" title="QR Code">
+										<blocks>
+											<m:VBox>
+												<m:Text
+													text="Scan the QR Code to browse this Miri Regev fan website!" />
+												<m:Image src="./img/qrcode.png" />
+											</m:VBox>
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+
+							<ObjectPageSection>
+								<subSections>
+									<ObjectPageSubSection id="qa" title="Q&amp;A">
+										<blocks>
+											<m:VBox>
+												<m:Label design="Bold" class="fontSize18"
+													text="Main differences between Web 1.0/2.0/3.0" />
+
+												<Table xmlns="sap.m" alternateRowColors="true">
+													<columns>
+														<Column width="1rem">
+															<Label text="" />
+														</Column>
+														<Column>
+															<Label design="Bold" text="Web 1.0" />
+														</Column>
+														<Column>
+															<Label design="Bold" text="Web 2.0" />
+														</Column>
+														<Column>
+															<Label design="Bold" text="Web 3.0" />
+														</Column>
+													</columns>
+													<items>
+
+														<ColumnListItem>
+															<cells>
+																<Text text="2" />
+																<Text
+																	text="Web 1.0 was all about static content, one way publishing of content without any real interaction between readers or publishers or each other." />
+																<Text
+																	text=" Web 2.0 is more about 2 way communication through social networking, blogging, wikis, tagging, user generated content and video." />
+																<Text
+																	text="Web 3.0 is curiusly undefined. AI and the web learning what you want and delivering you a Personalized web experience." />
+															</cells>
+														</ColumnListItem>
+														<ColumnListItem>
+															<cells>
+																<Text text="3" />
+																<Text text="The Hypertext/CGI Web. (the basic)" />
+																<Text text="The Community Web (for people: apps/sites)" />
+																<Text text="The Semantic Web (for machines)" />
+															</cells>
+														</ColumnListItem>
+														<ColumnListItem>
+															<cells>
+																<Text text="1" />
+																<Text text="Millions of users" />
+																<Text text="Billions of users" />
+																<Text text="Trillions of users" />
+															</cells>
+														</ColumnListItem>
+													</items>
+												</Table>
+												<m:Label text="Use-Case: User interacts with the WWW" class="sapUiMediumMarginTop underline"/>
+												<m:Text
+													text="\nIn web 1.0, a user would consume content published by a company.
+													\n\nIn web 2.0, a user would publish content that other users can consume, 
+													and companies publish platforms for that use. 
+													\n\nIn web 3.0, a user would interact with AI applications 
+													to consume and publish services."
+													class="sapUiTinyMarginBegin sapUiTinyMarginTop" />
+											</m:VBox>
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+
+							<ObjectPageSection>
+								<subSections>
+									<ObjectPageSubSection id="form" title="Contact Miri">
+										<blocks>
+											<m:VBox>
+												<form:SimpleForm editable="true"
+													backgroundDesign="Transparent" layout="ResponsiveGridLayout"
+													width="100%">
+
+													<m:Label text="Your E-Mail" />
+													<m:Input id="form_mail" placeholder="Enter your email..." />
+
+													<m:Label text="Your Name" />
+													<m:Input id="form_name" placeholder="Enter your name..." />
+
+													<m:Label text="Message" />
+													<m:TextArea id="form_msg" growing="true" rows="4"
+														placeholder="What would you like to say to Miri (Eden)?" />
+
+												</form:SimpleForm>
+												<m:Button type="Accept" text="Send!" icon="sap-icon://email"
+													press="onSendMail">
+													<m:layoutData>
+														<m:FlexItemData alignSelf="Center" />
+													</m:layoutData>
+												</m:Button>
+												<m:Text
+													text="* It will send the message to the email you enter, for dev purposes"
+													class="fontSmall" />
+
+											</m:VBox>
+										</blocks>
+									</ObjectPageSubSection>
+								</subSections>
+							</ObjectPageSection>
+						</sections>
+					</ObjectPageLayout>
+				</m:content>
+			</m:Page>
+		</m:pages>
+	</m:App>
+</mvc:View>
